@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="create.php">test</a>
+    <a href="create.php">form</a>
 </body>
 </html>
