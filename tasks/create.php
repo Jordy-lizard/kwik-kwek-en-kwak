@@ -28,10 +28,12 @@
 
         <label for="afdeling">Afdeling:</label>
         <select id="afdeling" name="afdeling">
-            <option value="HR">HR</option>
-            <option value="IT">IT</option>
-            <option value="Marketing">Marketing</option>
-            <option value="Financiën">Financiën</option>
+            <option value="personeel">personeel</option>
+            <option value="horeca">horeca</option>
+            <option value="techniek">techniek</option>
+            <option value="inkoop">inkoop</option>
+            <option value="klantenservice">klantenservice</option>
+            <option value="groen">groen</option>
         </select>
 
         <button type="submit">Verstuur</button>
