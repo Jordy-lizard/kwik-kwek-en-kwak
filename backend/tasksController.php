@@ -43,7 +43,41 @@ if ($action == "create") {
 
 }
 
-if ($action == "edit") {
+
+if ($action == "update") {
+    $id = $_POST['id'];
+    $naam = $_POST['naam'];
+    if (empty($naam)) {
+        $errors[] = "Vul een naam in.";
+    }
+    $titel = $_POST['titel'];
+    if (empty($titel)) {
+        $errors[] = "Vul een titel in.";
+    }
+    $beschrijving = $_POST['beschrijving'];
+    if (empty($beschrijving)) {
+        $errors[] = "Voer een beschrijving in.";
+    }
+    $afdeling = isset($_POST['afdeling']) ? $_POST['afdeling'] : null;
+    if (empty($afdeling)) {
+        $errors[] = "Kies een afdeling.";
+    }
+
+  
+    require_once '../backend/conn.php';
+
+
+    $query = "UPDATE taken SET naam = :naam, titel = :titel, beschrijving = :beschrijving, afdeling = :afdeling WHERE id = :id";
+    $statement = $conn->prepare($query);
+    $statement->execute([
+        ":naam" => $naam,
+        ":titel" => $titel,
+        ":beschrijving" => $beschrijving,
+        ":afdeling" => $afdeling,
+        ":id" => $id
+    ]);
+
+    header("Location: " . $base_url . "/tasks/index.php?msg=Taakgeupdate");
 }
 
 

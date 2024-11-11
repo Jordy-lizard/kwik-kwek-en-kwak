@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <?php require_once "components/header.php" ?>
     <a href="create.php">Form</a>
 </body>
 </html>
