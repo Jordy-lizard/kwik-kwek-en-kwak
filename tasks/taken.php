@@ -8,6 +8,9 @@
 </head>
 
 <body>
+
+<?php require_once '../components/header.php'; ?>
+
     <?php
     require_once '../backend/conn.php';
     $query = "select * from taken";
@@ -31,6 +34,7 @@
         <td><?php echo $taak['titel'] ?></td>
         <td><?php echo $taak['beschrijving'] ?></td>
         <td><?php echo $taak['afdeling'] ?></td>
+        <td><a href="edit.php?id=<?php echo $taak['id'] ?>">aanpassen</a></td>
         </tr>
 
     </table>
