@@ -15,6 +15,7 @@
     <?php if (isset($_GET['msg'])) {
         echo "<div class='msg'>" . $_GET['msg'] . "</div>";
     } ?>
+    <p>test</p>
 </body>
 
 </html>
