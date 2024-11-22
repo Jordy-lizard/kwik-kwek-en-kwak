@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/header.css">
 <?php require_once __DIR__ . "/../backend/config.php"; ?>
 
 <header>

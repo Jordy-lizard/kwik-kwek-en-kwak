@@ -1,0 +1,52 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background-color: #333; /* Dark background for header */
+    padding: 10px 0; /* Padding around the header */
+}
+
+/* Container for the navigation */
+.container {
+    width: 90%; /* Container takes 90% of the viewport width */
+    margin: 0 auto; /* Center-align the container */
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    align-items: center;
+}
+
+/* Styling for the links */
+nav a {
+    text-decoration: none; /* Remove underlines */
+    color: #fff; /* White text */
+    padding: 0 15px; /* Add space between links */
+    font-size: 16px; /* Slightly larger font */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for links */
+nav a:hover {
+    color: #f39c12; /* Change text color to orange when hovered */
+}
+
+/* Vertical pipe separator */
+nav a:not(:last-child)::after {
+    content: "|"; /* Display a pipe between links */
+    color: #fff; /* White color for separator */
+    padding-left: 15px; /* Space between link and separator */
+}
+
+/* Remove the separator after the last link */
+nav a:last-child::after {
+    content: "";
+}
