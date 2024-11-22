@@ -27,15 +27,16 @@
             <th>beschrijving</th>
             <th>afdeling</th>
         </tr>
-        <?php foreach ($taken as $taak ) ?>
-        <tr>
-        <td><?php echo $taak['id'] ?></td>
-        <td><?php echo $taak['naam'] ?></td>
-        <td><?php echo $taak['titel'] ?></td>
-        <td><?php echo $taak['beschrijving'] ?></td>
-        <td><?php echo $taak['afdeling'] ?></td>
-        <td><a href="edit.php?id=<?php echo $taak['id'] ?>">aanpassen</a></td>
-        </tr>
+        <?php foreach ($taken as $taak ): ?>
+            <tr>
+                <td><?php echo $taak['id'] ?></td>
+                <td><?php echo $taak['naam'] ?></td>
+                <td><?php echo $taak['titel'] ?></td>
+                <td><?php echo $taak['beschrijving'] ?></td>
+                <td><?php echo $taak['afdeling'] ?></td>
+                <td><a href="edit.php?id=<?php echo $taak['id'] ?>">aanpassen</a></td>
+            </tr>
+        <?php endforeach; ?>
 
     </table>
 

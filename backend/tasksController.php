@@ -39,7 +39,7 @@ if ($action == "create") {
         ":afdeling" => $afdeling
     ]);
 
-    header("Location: " . $base_url . "/tasks/index.php?msg=Taakopgeslagen");
+    header("Location: " . $base_url . "/index.php?msg=Taakopgeslagen");
 
 }
 
@@ -77,7 +77,7 @@ if ($action == "update") {
         ":id" => $id
     ]);
 
-    header("Location: " . $base_url . "/tasks/index.php?msg=Taakgeupdate");
+    header("Location: " . $base_url . "/index.php?msg=Taakgeupdate");
 }
 
 
@@ -94,7 +94,7 @@ if ($action == "delete") {
     $statement ->execute([":id" => $id]);
 
 
-    header("Location: " . $base_url . "/tasks/index.php?msg=TaakVerwijderd");
+    header("Location: " . $base_url . "/index.php?msg=TaakVerwijderd");
 
 }
 
