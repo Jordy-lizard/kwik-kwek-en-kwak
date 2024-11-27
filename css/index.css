@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* light blue background */
+    margin: 0;
+    padding: 0;
+    color: #00796b; /* dark teal text for contrast */
+
+}
+
+
+
+/* Main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the link */
+a {
+    color: #00796b; /* matching the text color */
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #81c784; /* light green background for button-like appearance */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+
+}
+
+a:hover {
+    background-color: #66bb6a; /* darker green on hover */
+}
+
+/* Styling for the message box */
+.msg {
+    background-color: #fff9c4; /* soft yellow background */
+    color: #fbc02d; /* dark yellow text */
+    padding: 10px;
+    border: 2px solid #fbc02d; /* matching border */
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    color: #00796b;
+}
+.box1{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
